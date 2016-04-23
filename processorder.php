@@ -1,3 +1,9 @@
+<?php 
+# create short variable names
+$tireqty = $_POST[ 'tireqty'];
+$oilqty = $_POST[ 'oilqty'];
+$sparkqty = $_POST[ 'sparkqty'];
+?>
 <html>
 <head>
 <title>Bob 's Auto Parts - Order Results</title>
@@ -10,6 +16,10 @@
 
     echo date('H:i ,jS F Y');
     echo "</p>";
+    echo '<p>Your order is as follows: </p>';
+    echo $tireqty. ' tires<br />';
+    echo $oilqty. ' bottles of oil<br />';
+    echo $sparkqty. ' spark plugs<br />';
 ?>
 </body>
 </html>
