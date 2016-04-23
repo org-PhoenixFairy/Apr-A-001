@@ -3,9 +3,10 @@
 class getArraySERVER
 {
     public static function getArraySERVERs(){
+        echo '--==SERVER==--';
         foreach ($_SERVER as $k=>$v){
-            echo '--==SERVER==--';
-            echo $k.'='.$v.'\n';
+            echo "\n";
+            echo $k.'='.$v;
         }
     }
 }
