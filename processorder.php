@@ -14,6 +14,9 @@ $sparkqty = $_POST[ 'sparkqty'];
 <?php 
     echo "<p>Order processed at ";
 
+    define('TIREPRICE', 100);
+    define('OILPRICE', 10);
+    define('SPARKPRICE', 4);
     echo date('H:i ,jS F Y');
     echo "</p>";
     echo '<p>Your order is as follows: </p>';
